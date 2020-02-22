@@ -22,31 +22,45 @@ public class ticTacToe {
      * @RETURNS: char player
      */
     public char currentState() {
-        if (isWinner(NOUGHTS))
+        if (board[0][0] == NOUGHTS && board[0][1] == NOUGHTS && board[0][2] == NOUGHTS ||
+            board[1][0] == NOUGHTS && board[1][1] == NOUGHTS && board[1][2] == NOUGHTS ||
+            board[2][0] == NOUGHTS && board[2][1] == NOUGHTS && board[2][2] == NOUGHTS ||
+            board[0][0] == NOUGHTS && board[1][0] == NOUGHTS && board[2][0] == NOUGHTS ||
+            board[0][1] == NOUGHTS && board[1][1] == NOUGHTS && board[2][1] == NOUGHTS ||
+            board[0][2] == NOUGHTS && board[1][2] == NOUGHTS && board[2][2] == NOUGHTS ||
+            board[0][0] == NOUGHTS && board[1][1] == NOUGHTS && board[2][2] == NOUGHTS ||
+            board[0][2] == NOUGHTS && board[1][1] == NOUGHTS && board[2][0] == NOUGHTS)
             return NOUGHTS;
-        else if (isWinner(CROSSES))
+        else if (board[0][0] == CROSSES && board[0][1] == CROSSES && board[0][2] == CROSSES ||
+                board[1][0] == CROSSES && board[1][1] == CROSSES && board[1][2] == CROSSES ||
+                board[2][0] == CROSSES && board[2][1] == CROSSES && board[2][2] == CROSSES ||
+                board[0][0] == CROSSES && board[1][0] == CROSSES && board[2][0] == CROSSES ||
+                board[0][1] == CROSSES && board[1][1] == CROSSES && board[2][1] == CROSSES ||
+                board[0][2] == CROSSES && board[1][2] == CROSSES && board[2][2] == CROSSES ||
+                board[0][0] == CROSSES && board[1][1] == CROSSES && board[2][2] == CROSSES ||
+                board[0][2] == CROSSES && board[1][1] == CROSSES && board[2][0] == CROSSES)
             return CROSSES;
         else
             return BLANK;
     }
 
-    /**
-     * IS WINNER
-     * @PARAMETERS: char player
-     * @RETURNS: boolean win
-     */
-    public boolean isWinner(char player) {
-        return  // HORIZONTAL CHECK
-                board[0][0] == player && board[0][1] == player && board[0][2] == player ||
-                board[1][0] == player && board[1][1] == player && board[1][2] == player ||
-                board[2][0] == player && board[2][1] == player && board[2][2] == player ||
-                // VERTICAL CHECK
-                board[0][0] == player && board[1][0] == player && board[2][0] == player ||
-                board[0][1] == player && board[1][1] == player && board[2][1] == player ||
-                board[0][2] == player && board[1][2] == player && board[2][2] == player ||
-                // DIAGONAL CHECK
-                board[0][0] == player && board[1][1] == player && board[2][2] == player ||
-                board[0][2] == player && board[1][1] == player && board[2][0] == player;
-    }
+//    /**
+//     * IS WINNER
+//     * @PARAMETERS: char player
+//     * @RETURNS: boolean win
+//     */
+//    public boolean isWinner(char player) {
+//        return  // HORIZONTAL CHECK
+//                board[0][0] == player && board[0][1] == player && board[0][2] == player ||
+//                board[1][0] == player && board[1][1] == player && board[1][2] == player ||
+//                board[2][0] == player && board[2][1] == player && board[2][2] == player ||
+//                // VERTICAL CHECK
+//                board[0][0] == player && board[1][0] == player && board[2][0] == player ||
+//                board[0][1] == player && board[1][1] == player && board[2][1] == player ||
+//                board[0][2] == player && board[1][2] == player && board[2][2] == player ||
+//                // DIAGONAL CHECK
+//                board[0][0] == player && board[1][1] == player && board[2][2] == player ||
+//                board[0][2] == player && board[1][1] == player && board[2][0] == player;
+//    }
 
 }

@@ -98,42 +98,42 @@ public class ticTacToeTest {
     /*
     Tests is winner function
      */
-    @org.junit.Test
-    public void isWinnerTest() {
-        char[][] board = {
-                {'O', 'O', 'O'},
-                {' ', 'X', ' '},
-                {' ', ' ', 'X'}
-        };
-
-        System.out.println(
-                "\n-Running isWinner-\n\n" +
-                "Input board: \n" +
-                Arrays.deepToString(board)
-        );
-
-        ticTacToe game = new ticTacToe(board);
-        assertTrue(game.isWinner('O'));
-
-        System.out.println(
-                "Expected: true\n" +
-                "Success!\n"
-        );
-
-        board = new char[][]{
-                {'X', 'O', 'O'},
-                {' ', 'X', ' '},
-                {' ', ' ', 'X'}
-        };
-
-        game = new ticTacToe(board);
-        assertTrue(game.isWinner('X'));
-
-        System.out.println(
-                "Input board: \n" +
-                Arrays.deepToString(board) + "\n" +
-                "Expected: true\n" +
-                "Success!\n"
-        );
-    }
+//    @org.junit.Test
+//    public void isWinnerTest() {
+//        char[][] board = {
+//                {'O', 'O', 'O'},
+//                {' ', 'X', ' '},
+//                {' ', ' ', 'X'}
+//        };
+//
+//        System.out.println(
+//                "\n-Running isWinner-\n\n" +
+//                "Input board: \n" +
+//                Arrays.deepToString(board)
+//        );
+//
+//        ticTacToe game = new ticTacToe(board);
+//        assertTrue(game.isWinner('O'));
+//
+//        System.out.println(
+//                "Expected: true\n" +
+//                "Success!\n"
+//        );
+//
+//        board = new char[][]{
+//                {'X', 'O', 'O'},
+//                {' ', 'X', ' '},
+//                {' ', ' ', 'X'}
+//        };
+//
+//        game = new ticTacToe(board);
+//        assertTrue(game.isWinner('X'));
+//
+//        System.out.println(
+//                "Input board: \n" +
+//                Arrays.deepToString(board) + "\n" +
+//                "Expected: true\n" +
+//                "Success!\n"
+//        );
+//    }
 }

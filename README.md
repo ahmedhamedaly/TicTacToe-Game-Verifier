@@ -29,6 +29,10 @@ A game verifier for Tic-Tac-Toe to check which player has won (if any)
   ```
   $ mvn test
   ```
+  
+  ![Sample output](https://user-images.githubusercontent.com/51321440/75097856-5019f800-55a7-11ea-99b4-e9721afe7c28.png)
+
+  
   If you want to test out a specific function, eg. constructor or currentState.
   
   ```

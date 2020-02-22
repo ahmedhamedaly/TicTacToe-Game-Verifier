@@ -6,8 +6,11 @@ import static org.junit.Assert.*;
 @RunWith(JUnit4.class)
 public class ticTacToeTest {
 
+    /*
+    Tests the constructor
+     */
     @org.junit.Test
-    public void constructor() {
+    public void constructorTest() {
         char[][] board = {
                 {' ', ' ', ' '},
                 {' ', ' ', ' '},
@@ -27,8 +30,11 @@ public class ticTacToeTest {
         );
     }
 
+    /*
+    Tests the current state of the game
+     */
     @org.junit.Test
-    public void state() {
+    public void stateTest() {
         char expected;
 
         char[][] board = {
@@ -45,7 +51,7 @@ public class ticTacToeTest {
         expected = 'X';
 
         ticTacToe game = new ticTacToe(board);
-        assertEquals(expected, game.state());
+        assertEquals(expected, game.currentState());
 
         System.out.println(
                 "Expected: " + expected + "\n" +
@@ -61,7 +67,7 @@ public class ticTacToeTest {
         expected = 'O';
 
         game = new ticTacToe(board);
-        assertEquals(expected, game.state());
+        assertEquals(expected, game.currentState());
 
         System.out.println(
                 "Input board: \n" +
@@ -79,7 +85,7 @@ public class ticTacToeTest {
         expected = ' ';
 
         game = new ticTacToe(board);
-        assertEquals(expected, game.state());
+        assertEquals(expected, game.currentState());
 
         System.out.println(
                 "Input board: \n" +
@@ -89,8 +95,11 @@ public class ticTacToeTest {
         );
     }
 
+    /*
+    Tests is winner function
+     */
     @org.junit.Test
-    public void isWinner() {
+    public void isWinnerTest() {
         char[][] board = {
                 {'O', 'O', 'O'},
                 {' ', 'X', ' '},

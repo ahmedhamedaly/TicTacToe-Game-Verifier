@@ -34,7 +34,7 @@ public class ticTacToeTest {
     Tests the current state of the game
      */
     @org.junit.Test
-    public void stateTest() {
+    public void currentStateTest() {
         char expected;
 
         char[][] board = {
@@ -44,7 +44,7 @@ public class ticTacToeTest {
         };
 
         System.out.println(
-                "\n-Running State-\n\n" +
+                "\n-Running Current State-\n\n" +
                 "Input board: \n" +
                 Arrays.deepToString(board)
         );

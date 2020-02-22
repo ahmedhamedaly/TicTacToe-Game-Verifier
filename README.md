@@ -1,5 +1,5 @@
-# TicTacToe-Game-Verifier
-A game verifier for Tic-Tac-Toe to check which player has won (if any)
+# TicTacToe Game Verifier
+A game verifier for Tic-Tac-Toe to check which player has won (if any).
 
 
 ## Getting Started
@@ -8,8 +8,8 @@ A game verifier for Tic-Tac-Toe to check which player has won (if any)
 
   You will need to have installed:
   ```
-  - Java 8
-  - Maven
+  -Java 8
+  -Maven
   ```
  
 ### Installation

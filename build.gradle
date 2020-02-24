@@ -17,6 +17,9 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version:'4.12'
 }
 
+/**
+ * https://stackoverflow.com/questions/3963708/gradle-how-to-display-test-results-in-the-console-in-real-time
+ */
 test {
     testLogging {
         events "passed", "skipped", "failed"
